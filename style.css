@@ -1,0 +1,128 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+logo {
+    width: 200px;
+    height: 200px;
+}
+
+
+h1{ 
+    text-align: center;
+    color: rgb(10, 9, 9);
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(231, 189, 73);
+    display: grid;
+    place-items: center;
+ }
+
+ nav ul { 
+    list-style-type: none;
+ }
+
+ nav ul a { 
+    display: inline-block;
+    padding: 50px;
+    text-decoration: none;
+    color:#000;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+ }
+ nav ul a:hoover{
+    background-color: rgb(214, 180, 45);
+    color:rgb(197, 148, 70);
+}
+
+.items{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.item img{ 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hoover{ 
+    transform: scale(1.04);
+}
+
+.item h4 { 
+    padding: 5px;
+    text-align: center;
+}
+
+.item button{ 
+    padding: 5px 30px;
+    border: none;
+    outline:none;
+    background-color: rgba(89, 23, 7, 0.331);
+    color: rgb(97, 27, 27);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0;
+    transition: 0.2s all;
+}
+
+.item button:hoover{
+    transform: scale(1.08);
+}
+
+@media screen and (max-width:1000px){
+.items{
+    grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ 
+@media screen and (max-width:768px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+        }
+     }
+
+     footer{ 
+        background-color: #eac45a;
+        color: rgb(9, 11, 13);
+     }
+     .footer_info{ 
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+     }
+     .footer_info .footer_width{ 
+        padding: 0 15px;
+     }
+     .footer_info h2{
+        margin-bottom: 20px;
+      }
+      .localization{ 
+        width: 20%;
+      }
+      .about, .contact{
+        width: 40%;
+      }
+
+      .hello{
+        position: absolute;
+        height:auto;
+        display: block;
+        margin-left:10px;
+        margin-right: auto;
+        width: 10%;
+       
+       }
+     
